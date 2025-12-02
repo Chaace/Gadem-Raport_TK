@@ -1,0 +1,70 @@
+@page {
+  size: F4;
+  margin: 20mm;
+}
+
+/* Gaya dasar halaman */
+body {
+  background: #ccc; /* supaya terlihat batas halamannya */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+/* Area halaman A4 */
+.page {
+  background: white;
+  width: 210mm;
+  min-height: 297mm;
+  /* padding: 20mm; */
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  box-sizing: border-box;
+  position: relative;
+}
+
+/* Supaya saat print ukuran tetap */
+@media print {
+  body {
+    background: none;
+    padding: 0;
+  }
+  .page {
+    box-shadow: none;
+    margin: 0;
+    width: 100%;
+    min-height: auto;
+    page-break-after: always;
+  }
+}   
+/* header berlaku untuk screen & print */
+.header {
+  display: flex;
+  margin: 0;
+}
+/* logo sekolah di kiri header */
+.header .logo1 {
+  justify-content: flex-start; 
+  /* dorong logo ke kiri   */
+  width: 100px;
+  top: 0;
+  bottom: 0;
+  height: auto;
+  display: block;
+  margin-right: auto;
+}
+.header .logo2 {
+  width: 200px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  justify-content: right;
+  rotate: 180deg;
+  transform: scaleX(-1);
+}
+.header .baris1 {
+  color: orange;
+}
+.header .baris2 {
+  color: blue;
+}
