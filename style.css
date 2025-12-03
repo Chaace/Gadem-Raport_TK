@@ -68,3 +68,32 @@ body {
 .header .baris2 {
   color: blue;
 }
+/* box input styles */
+.data_siswa .input {
+  max-width: 190px;
+  height: 44px;
+  background-color: #fffffffe;
+  border-radius: .5rem;
+  padding: 0 1rem;
+  border: 2px solid rgb(79, 162, 246);
+  font-size: 1rem;
+  transition: border-color .3s cubic-bezier(.25,.01,.25,1) 0s, color .3s cubic-bezier(.25,.01,.25,1) 0s,background .2s cubic-bezier(.25,.01,.25,1) 0s;
+}
+
+.data_siswa .label {
+  display: block;
+  margin-bottom: .3rem;
+  font-size: .9rem;
+  font-weight: bold;
+  color: #05060f99;
+  transition: color .3s cubic-bezier(.25,.01,.25,1) 0s;
+}
+
+.data_siswa .input:hover, .input:focus, .input-group:hover .input {
+  outline: none;
+  border-color: #273298;
+}
+
+.data_siswa .input-group:hover .label, .input:focus {
+  color: #05060fc2;
+}
