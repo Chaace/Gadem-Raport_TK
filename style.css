@@ -79,6 +79,14 @@ body {
   font-size: 1rem;
   transition: border-color .3s cubic-bezier(.25,.01,.25,1) 0s, color .3s cubic-bezier(.25,.01,.25,1) 0s,background .2s cubic-bezier(.25,.01,.25,1) 0s;
 }
+/* belum selesai diedit (gunakan flex untuk input bisa di kanan dan dikiri. */ 
+.data_siswa { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem; 
+}
 
 .data_siswa .label {
   display: block;
