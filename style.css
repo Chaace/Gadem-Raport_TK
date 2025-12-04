@@ -68,8 +68,17 @@ body {
 .header .baris2 {
   color: blue;
 }
+/* belum selesai diedit (gunakan flex untuk input bisa di kanan dan dikiri. */ 
+.data_siswa1 { 
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 1rem; 
+
+}
 /* box input styles */
-.data_siswa .input {
+.data_siswa1 .input {
   max-width: 190px;
   height: 44px;
   background-color: #fffffffe;
@@ -79,17 +88,9 @@ body {
   font-size: 1rem;
   transition: border-color .3s cubic-bezier(.25,.01,.25,1) 0s, color .3s cubic-bezier(.25,.01,.25,1) 0s,background .2s cubic-bezier(.25,.01,.25,1) 0s;
 }
-/* belum selesai diedit (gunakan flex untuk input bisa di kanan dan dikiri. */ 
-.data_siswa { 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  margin-top: 2rem; 
-}
 
-.data_siswa .label {
-  display: block;
+.data_siswa1 .label {
+  justify-content: st;
   margin-bottom: .3rem;
   font-size: .9rem;
   font-weight: bold;
@@ -97,11 +98,58 @@ body {
   transition: color .3s cubic-bezier(.25,.01,.25,1) 0s;
 }
 
-.data_siswa .input:hover, .input:focus, .input-group:hover .input {
+.data_siswa1 .input:hover, .input:focus, .input-group:hover .input {
   outline: none;
   border-color: #273298;
 }
 
-.data_siswa .input-group:hover .label, .input:focus {
+.data_siswa1 .input-group:hover .label, .input:focus {
   color: #05060fc2;
+}
+/* data siswa baris 2 */
+.data_siswa2 { 
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 1rem; 
+}
+/* box input styles */
+.data_siswa2 .input {
+  max-width: 190px;
+  height: 44px;
+  background-color: #fffffffe;
+  border-radius: .5rem;
+  padding: 0 1rem;
+  border: 2px solid rgb(79, 162, 246);
+  font-size: 1rem;
+  transition: border-color .3s cubic-bezier(.25,.01,.25,1) 0s, color .3s cubic-bezier(.25,.01,.25,1) 0s,background .2s cubic-bezier(.25,.01,.25,1) 0s;
+}
+
+.data_siswa2 .label {
+  justify-content: st;
+  margin-bottom: .3rem;
+  font-size: .9rem;
+  font-weight: bold;
+  color: #05060f99;
+  transition: color .3s cubic-bezier(.25,.01,.25,1) 0s;
+}
+
+.data_siswa2 .input:hover, .input:focus, .input-group:hover .input {
+  outline: none;
+  border-color: #273298;
+}
+
+.data_siswa2 .input-group:hover .label, .input:focus {
+  color: #05060fc2;
+}
+
+/* Data siswa sudah bisa, namun box editor nya masih belum bisa */
+.editor-box {
+  height: 50%;
+  border: 1px solid #aaa;
+  padding: 50px;
+  box-sizing: border-box;
+  min-height: 500px; /* <— wajib */
+  width: 100%;
 }
